@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAM's Community</title>
+	<link rel="stylesheet" type="text/css" href="Assgn-1.css">
+</head>
+<body>
+	<div class="container">
+		<h1>RAM's Community</h1>
+		<hr>
+		<p>This is a dropdown of all the buildings and the apartments that have been constructed.</p>
+		<p>It gives the information on how many rooms are there in an apartment and all the facilities in it.</p>
+		<label for="buildings">Select Building:</label>
+		<select id="buildings" onchange="getApartments()">
+			<option value="">--Select Building--</option>
+			<option value="building1">Block A</A></option>
+			<option value="building2">Block B</option>
+			<option value="building3">Block C</option>
+			<option value="building4">Block D</option>
+			<option value="building5">Block E</option>
+		</select>
+		<br>
+		<label for="apartments">Select Apartment:</label>
+		<select id="apartments" onchange="getApartmentDetails()" disabled>
+			<option value="">--Select Apartment--</option>
+		</select>
+		<br>
+		<div id="apartmentDetails"></div>
+	</div>
+	<script src="Assgn-1.js"></script>
+</body>
+</html>
